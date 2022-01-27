@@ -49,7 +49,10 @@ export const FileUploader = () => {
     }
     setIsLoading(true);
     axios
-      .post(`${process.env.REACT_APP_SERVER}/${keys}/${email}/${option}`, data)
+      .post(
+        `${process.env.REACT_APP_SERVER}/upload/${keys}/${email}/${option}`,
+        data
+      )
       .then((res) => {
         setIsLoading(false);
         setKeys([]);
