@@ -88,30 +88,25 @@
 }
 
 .keys {
+  justify-content: center;
+  margin-left: 29rem;
   width: 45% !important;
-  margin-left: 460px;
 }
 
 .radio {
   display: flex;
-  gap: 2rem;
-  margin: 0 560px;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .loading {
-  margin-left: 620px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
-  .radio,
-  .loading {
-    text-align: center;
-    justify-content: center;
-    margin: 1.5rem 10rem;
+  .keys {
+    margin: 1.5rem auto !important;
+    padding: 0;
   }
-}
-
-.keys {
-  margin: 1.5rem auto;
-  padding: 0;
 }
