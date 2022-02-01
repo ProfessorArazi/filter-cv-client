@@ -101,3 +101,17 @@
 .loading {
   margin-left: 620px;
 }
+
+@media (max-width: 768px) {
+  .radio,
+  .loading {
+    text-align: center;
+    justify-content: center;
+    margin: 1.5rem 10rem;
+  }
+}
+
+.keys {
+  margin: 1.5rem auto;
+  padding: 0;
+}
