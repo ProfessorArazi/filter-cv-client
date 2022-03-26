@@ -1,7 +1,9 @@
 import "./App.css";
+import { useEffect } from "react";
 import { FileUploader } from "./Components/FileUploader/FileUploader";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 
 /*
 todo:
@@ -9,6 +11,10 @@ todo:
 */
 
 function App() {
+  useEffect(() => {
+    axios(process.env.REACT_APP_SERVER);
+  }, []);
+
   return (
     <div className="App">
       <FileUploader />
