@@ -11,10 +11,6 @@ todo:
 */
 
 function App() {
-  useEffect(() => {
-    axios(process.env.REACT_APP_SERVER);
-  }, []);
-
   return (
     <div className="App">
       <FileUploader />
