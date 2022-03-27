@@ -1,9 +1,7 @@
 import "./App.css";
-import { useEffect } from "react";
 import { FileUploader } from "./Components/FileUploader/FileUploader";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import axios from "axios";
 
 /*
 todo:
